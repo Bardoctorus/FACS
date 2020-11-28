@@ -1,0 +1,25 @@
+REACH
+
+Requires: 
+	City
+	
+
+Reach Contains:
+
+	Position (x,y)
+	Owner (city.name)
+	Color (City.color) <-- this might get complicated for the merge cities
+	
+	
+
+
+Reach needs to:
+	Add new reach around self (int number reach, direction city.sentiment.direction)
+	Remove reach (position x,y)
+	Modify reach (position x+y, new city.name)
+
+
+
+Modifiers:
+	reach direction down to city sentiment - do in city class?
+	number reach down to game events - need a shock flag somewhere: if(shocked) no new reach UNLESS psycho --> gets 2.
